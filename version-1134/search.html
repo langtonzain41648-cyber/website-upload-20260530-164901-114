@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索影片-高清国产视频-高清视频在线观看-精选影片片单</title>
+    <meta name="description" content="整理高清国产视频栏目，覆盖影视相关内容、精选片单和热门分类。">
+    <meta name="keywords" content="高清国产视频,国产视频,高清视频,精选片单,在线观看,热门内容">
+    <link rel="canonical" href="./search.html">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="brand" href="./index.html" aria-label="高清国产视频">
+            <span class="brand-icon">▶</span>
+            <span class="brand-copy">
+                <span class="brand-name">高清国产视频</span>
+                <span class="brand-tagline">高清视频在线观看 · 精选影片片单</span>
+            </span>
+        </a>
+        <nav class="desktop-nav" aria-label="主导航">
+                <a class="nav-link" href="./index.html">首页</a>
+                <a class="nav-link" href="./categories.html">分类</a>
+                <a class="nav-link" href="./library.html">片库</a>
+                <a class="nav-link" href="./ranking.html">排行榜</a>
+                <a class="nav-link active" href="./search.html">搜索</a>
+        </nav>
+        <form class="header-search" data-search-form data-prefix="./">
+            <input type="search" name="q" placeholder="搜索影片..." aria-label="搜索影片">
+            <button type="submit" aria-label="提交搜索">⌕</button>
+        </form>
+        <button class="menu-toggle" type="button" aria-label="打开菜单" data-menu-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="mobile-panel" data-mobile-panel>
+        <form class="mobile-search" data-search-form data-prefix="./">
+            <input type="search" name="q" placeholder="搜索影片..." aria-label="搜索影片">
+            <button type="submit">搜索</button>
+        </form>
+        <nav class="mobile-nav" aria-label="移动导航">
+            <a class="mobile-link" href="./index.html">首页</a>
+            <a class="mobile-link" href="./categories.html">分类</a>
+            <a class="mobile-link" href="./library.html">片库</a>
+            <a class="mobile-link" href="./ranking.html">排行榜</a>
+            <a class="mobile-link active" href="./search.html">搜索</a>
+        </nav>
+    </div>
+</header>
+<main>
+<section class="page-hero compact-hero">
+    <div class="container">
+        <span class="section-kicker">站内搜索</span>
+        <h1>搜索高清影片</h1>
+        <p>输入影片标题、地区、年份、类型或标签，快速找到对应详情页。</p>
+        <form class="search-page-form" data-search-page-form>
+            <input id="site-search-input" type="search" placeholder="搜索影片..." aria-label="搜索影片">
+            <button type="submit">搜索</button>
+        </form>
+    </div>
+</section>
+<section class="container page-section search-results-section">
+    <div class="filter-panel search-filter-panel">
+        <select id="search-type" aria-label="按类型筛选">
+            <option value="">全部类型</option>
+        </select>
+        <select id="search-region" aria-label="按地区筛选">
+            <option value="">全部地区</option>
+        </select>
+        <select id="search-year" aria-label="按年份筛选">
+            <option value="">全部年份</option>
+        </select>
+    </div>
+    <div id="search-results" class="movie-grid"></div>
+    <p id="search-empty" class="empty-state">输入关键词开始搜索影片</p>
+</section>
+</main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-brand">
+            <a class="brand footer-logo" href="./index.html">
+                <span class="brand-icon">▶</span>
+                <span class="brand-copy">
+                    <span class="brand-name">高清国产视频</span>
+                    <span class="brand-tagline">高清视频在线观看 · 精选影片片单</span>
+                </span>
+            </a>
+            <p>整理高清国产视频栏目，覆盖影视相关内容、精选片单和热门分类。</p>
+        </div>
+        <div>
+            <h2>热门入口</h2>
+            <a href="./categories.html">影片分类</a>
+            <a href="./library.html">影片片库</a>
+            <a href="./ranking.html">热门排行榜</a>
+        </div>
+        <div>
+            <h2>精选分类</h2>
+            <a href="./category/domestic.html">国产精选</a>
+            <a href="./category/action.html">动作热血</a>
+            <a href="./category/suspense.html">悬疑惊悚</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 高清国产视频 · 高清视频在线观看 · 精选影片片单</p>
+    </div>
+</footer>
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/search-index.js"></script>
+<script src="./assets/js/search.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

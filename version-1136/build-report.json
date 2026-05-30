@@ -1,0 +1,20 @@
+{
+  "movie_count": 2000,
+  "detail_pages": 2000,
+  "html_files": 2015,
+  "stats_pages": 2015,
+  "missing_stats": [],
+  "category_counts": {
+    "热门精选": 250,
+    "经典高分": 250,
+    "悬疑惊悚": 250,
+    "科幻奇幻": 250,
+    "动作冒险": 250,
+    "爱情剧情": 250,
+    "喜剧家庭": 250,
+    "纪录动画": 250
+  },
+  "video_url_count_from_uploaded_js": 150,
+  "unique_video_url_count": 20,
+  "generated_at": "2026-05-26T10:31:35.555265Z"
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>搜索影片 - 最新电影大全</title>
+      <meta name="description" content="站内影片搜索页面，可按片名、年份、地区和类型筛选。">
+      <meta name="keywords" content="最新电影大全,最新电影,近期电影,高清影片,电影合集,在线观看">
+      <meta name="robots" content="index,follow">
+      <link rel="stylesheet" href="./assets/base.css">
+      <link rel="stylesheet" href="./assets/style.css">
+    </head>
+    <body class="">
+      <div class="site-shell">
+
+    <header class="site-header">
+      <div class="container-wide header-inner">
+        <a class="brand" href="./index.html" aria-label="最新电影大全首页">
+          <span class="brand-mark">影</span>
+          <span>
+            <span class="brand-name">最新电影大全</span>
+            <span class="brand-subtitle">高清视频免费看</span>
+          </span>
+        </a>
+        <nav class="desktop-nav" aria-label="主导航">
+          <a href="./index.html">首页</a>
+          <a href="./categories.html">分类总览</a>
+          <a href="./category/guochan.html">国产剧场</a>
+          <a href="./category/rihan.html">日韩影院</a>
+          <a href="./category/oumei.html">欧美专区</a>
+          <a href="./category/qita.html">其他精选</a>
+          <a href="./ranking.html">排行榜</a>
+          <a href="./all.html">全部影片</a>
+        </nav>
+        <form class="header-search" action="./search.html" method="get">
+          <input type="search" name="q" placeholder="搜索影片、地区、类型..." aria-label="搜索影片">
+          <button type="submit">搜索</button>
+        </form>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav">菜单</button>
+      </div>
+      <nav class="container-wide mobile-nav" id="mobile-nav" data-mobile-nav aria-label="移动端导航">
+        <a href="./index.html">首页</a>
+        <a href="./categories.html">分类总览</a>
+        <a href="./category/guochan.html">国产剧场</a>
+          <a href="./category/rihan.html">日韩影院</a>
+          <a href="./category/oumei.html">欧美专区</a>
+          <a href="./category/qita.html">其他精选</a>
+        <a href="./ranking.html">排行榜</a>
+        <a href="./all.html">全部影片</a>
+        <a href="./search.html">搜索</a>
+      </nav>
+    </header>
+        <main>
+
+      <section class="page-hero">
+        <div class="container-wide">
+          <div class="breadcrumb"><a href="./index.html">首页</a><span>/</span><span>搜索</span></div>
+          <h1 class="page-title">搜索与筛选</h1>
+          <p class="page-desc">输入片名、地区、类型、年份或标签，在全部 2000 部影片中快速查找。</p>
+          <div class="search-large" data-search-page>
+            <input type="search" data-search-input placeholder="例如：悬疑、动作、2026、中国大陆" aria-label="搜索关键词">
+            <select data-search-category aria-label="搜索分类">
+              <option value="">全部分类</option>
+              <option value="guochan">国产剧场</option><option value="rihan">日韩影院</option><option value="oumei">欧美专区</option><option value="qita">其他精选</option>
+            </select>
+            <select data-search-sort aria-label="搜索排序">
+              <option value="heat-desc">按热度排序</option>
+              <option value="year-desc">按年份排序</option>
+              <option value="title-asc">按片名排序</option>
+            </select>
+            <p class="result-counter" data-search-counter style="grid-column: 1 / -1; color: #cbd5e1; margin: 0;">正在载入影片索引...</p>
+            <div class="empty-state" data-search-empty style="grid-column: 1 / -1;">没有找到匹配影片，请尝试更换关键词。</div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container-wide">
+          <div class="grid-cards" data-search-results></div>
+        </div>
+      </section>
+
+        </main>
+
+    <footer class="site-footer">
+      <div class="container-wide footer-grid">
+        <div>
+          <h3>最新电影大全</h3>
+          <p>整理近期更新的电影内容，包含多类型影片分类与推荐，适合查找最新电影栏目页面。</p>
+        </div>
+        <div>
+          <h4>快速导航</h4>
+          <ul>
+            <li><a href="./index.html">首页</a></li>
+            <li><a href="./categories.html">分类总览</a></li>
+            <li><a href="./ranking.html">排行榜</a></li>
+            <li><a href="./all.html">全部影片</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>影视分类</h4>
+          <ul>
+            <li><a href="./category/guochan.html">国产剧场</a></li><li><a href="./category/rihan.html">日韩影院</a></li><li><a href="./category/oumei.html">欧美专区</a></li><li><a href="./category/qita.html">其他精选</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>站内入口</h4>
+          <ul>
+            <li><a href="./search.html">搜索影片</a></li>
+            <li><a href="./sitemap.html">站点地图</a></li>
+            <li><a href="./all.html#movie-list">影片索引</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-wide footer-bottom">
+        <span>© 2026 最新电影大全. All rights reserved.</span>
+        <span>静态页面支持电脑与移动端访问</span>
+      </div>
+    </footer>
+      </div>
+      <script src="./assets/search-index.js"></script>
+<script src="./assets/site.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    </body>
+    </html>
